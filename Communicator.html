@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+
+    <title>Communincator</title>
+
+    <style>
+
+        body {
+            background-image: url("images/parrot.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        #connectionHeader {
+            text-align: center; 
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #textBox{
+            margin: auto;
+            width: 75%;
+            height: 500px;
+            border-style: groove;
+            background-color:#FFF8DC;
+
+        }
+
+
+    </style>
+
+    <body>
+
+        <h1 id = "connectionHeader" style = "font-size: 30px"></h1>
+
+        <div id = "textBox">
+
+            <input style = "width: 400px; height: 30px;">
+
+        </div>
+
+    </body>
+
+    <script>
+
+        var correspondentName = "SAMPLENAME";
+        document.getElementById("connectionHeader").innerHTML = "You have been connected to: " + correspondentName;
+
+    </script>
+
+</html>
